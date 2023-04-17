@@ -1,7 +1,7 @@
 {
-  "name": "adopt-me-me-v8",
-  "version": "1.0.0",
-  "description": "",
+  "name": "citr-v8-project",
+  "version": "8.0.0",
+  "description": "Complete Intro to React v8 project",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -9,26 +9,33 @@
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test:watch": "vitest --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brian Holt",
   "license": "ISC",
   "devDependencies": {
-    "@vitejs/plugin-react": "^2.1.0",
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.31.8",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^2.7.1",
-    "vite": "^3.1.4"
+    "@testing-library/react": "13.4.0",
+    "@vitejs/plugin-react": "2.1.0",
+    "@vitest/coverage-c8": "0.24.3",
+    "eslint": "8.24.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-react": "7.31.8",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "happy-dom": "^7.6.0",
+    "prettier": "2.7.1",
+    "vite": "3.1.4",
+    "vitest": "0.24.3",
+    "vitest-fetch-mock": "0.2.1"
   },
   "dependencies": {
-    "@tanstack/react-query": "^4.10.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.1"
+    "@tanstack/react-query": "4.10.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.4.1"
   }
 }
